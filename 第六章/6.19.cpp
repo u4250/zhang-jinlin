@@ -10,7 +10,7 @@ double hypotenuse(double a,double b)
 int main()
 {
     double x,y,result;
-    cout<<"输入两条直角边长\n";
+    cout<<"输入两条直角边长x,y\n";
     cin>>x>>y;
     result=hypotenuse(x,y);
     cout<<result;
