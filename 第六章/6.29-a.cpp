@@ -2,19 +2,17 @@
 using namespace std;
 int f(int a)
 {
-    int i,k=1;
-    for(i=2;i<=a;i++)
-    {
-        if(a/i==0) k=1;
-    }
-    return k;
+    int i;
+    for(i=2;i<=(a/2);i++)
+        if(a%i==0) 
+    	return 1;
+    	return 0;
 }
-
 int main()
 {
     int x;
     cin>>x;
-    if(f(x)) cout<<"是";
+    if(f(x)) cout<<"不是";
     else
-	cout<<"不是";
+	cout<<"是";
 }
